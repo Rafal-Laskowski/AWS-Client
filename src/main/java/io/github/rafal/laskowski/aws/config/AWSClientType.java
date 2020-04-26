@@ -1,6 +1,6 @@
-package io.github.rafal.laskowski.aws;
+package io.github.rafal.laskowski.aws.config;
 
-public enum AWSClientType {
+enum AWSClientType {
     AWS,
     LOCALSTACK;
 
