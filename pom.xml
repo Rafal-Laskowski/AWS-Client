@@ -9,15 +9,17 @@
 
     <name>AWS Client</name>
     <url>https://github.com/Rafal-Laskowski/AWS-Client</url>
-    <description>Simple AWS Client builder sufficient for testing purposes</description>
+    <description>Simple AWS Client builder sufficient for testing purposes. Supports AWS Services and Localstack</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- dependencies versions -->
+        <aws.version>LATEST</aws.version>
     </properties>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -85,22 +87,27 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-s3</artifactId>
-            <version>1.11.492</version>
-        </dependency>
+            <version>${aws.version}</version>
+    </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-dynamodb</artifactId>
-            <version>1.11.543</version>
+            <version>${aws.version}</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-lambda</artifactId>
-            <version>1.11.700</version>
+            <version>${aws.version}</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-core</artifactId>
-            <version>1.11.700</version>
+            <version>${aws.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sqs</artifactId>
+            <version>${aws.version}</version>
         </dependency>
     </dependencies>
 
