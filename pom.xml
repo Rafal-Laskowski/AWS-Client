@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.rafal-laskowski</groupId>
     <artifactId>aws-client</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>AWS Client</name>
@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- dependencies versions -->
-        <aws.version>LATEST</aws.version>
+        <aws.version>1.11.775</aws.version>
     </properties>
 
     <build>
