@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- dependencies versions -->
-        <aws.version>1.11.775</aws.version>
+        <aws.version>1.12.261</aws.version>
     </properties>
 
     <build>
